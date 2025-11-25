@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+:root {
+  --green: linear-gradient(265.23deg, #237249 6.79%, #35c66b 97.2%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #121517;
+  color: #d9d9d9;
+  font-size: 20px;
+}
+input,
+button {
+  font-family: inherit;
+}
+.container {
+  max-width: 1290px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+ul {
+  list-style: none;
+}

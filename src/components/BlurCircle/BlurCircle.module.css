@@ -1,0 +1,7 @@
+.circle {
+  position: absolute;
+  background: #237249;
+  border-radius: 50%;
+  filter: blur(100px);
+  z-index: -1;
+}
