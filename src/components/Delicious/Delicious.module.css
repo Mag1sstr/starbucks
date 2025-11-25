@@ -33,39 +33,3 @@
 .subtitle {
   line-height: 1.6;
 }
-.vid {
-  position: relative;
-  width: 100%;
-  height: 275px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    transform: rotate(-180deg);
-    background-image: url(../../assets/delicious/vid.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    filter: blur(2px);
-    box-shadow: 0px 4px 41px 0px #0000007d;
-    z-index: -1;
-  }
-}
-.play {
-  all: unset;
-  font-size: 24px;
-  color: #fff;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  padding: 20px 42px;
-  background: linear-gradient(265.23deg, #237249 6.79%, #35c66b 97.2%);
-  border-radius: 82px;
-  cursor: pointer;
-}

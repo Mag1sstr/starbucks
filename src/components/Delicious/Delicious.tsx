@@ -1,6 +1,7 @@
 import styles from "./Delicious.module.css";
 import image from "../../assets/delicious/img.png";
 import BlurCircle from "../BlurCircle/BlurCircle";
+import Video from "../Video/Video";
 
 function Delicious() {
   return (
@@ -21,7 +22,20 @@ function Delicious() {
               market
             </p>
 
-            <div className={styles.vid}>
+            <Video />
+            {/* <div className={styles.vid}>
+              <iframe
+                id="yt-player"
+                className={styles.player}
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/xS8UsA1YB_s?enablejsapi=1"
+                title="make drinks at starbucks! starbucks barista vlog"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
               <button className={styles.play}>
                 <svg
                   width="20"
@@ -39,7 +53,7 @@ function Delicious() {
                 </svg>
                 Cooking Process
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
