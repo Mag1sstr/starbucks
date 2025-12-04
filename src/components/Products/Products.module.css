@@ -51,6 +51,15 @@
   text-align: center;
   border: 1.35px solid #dadada;
   border-radius: 29px;
+  transition: border 0.3s;
+  &:hover {
+    border: 1px solid #35c66b;
+    .imageWrapper {
+      img {
+        transform: scale(1.05);
+      }
+    }
+  }
 
   h3 {
     font-size: 32px;
@@ -99,15 +108,18 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
+  img {
+    transition: 0.3s;
+  }
 }
 .btn {
+  all: unset;
   opacity: 1;
   visibility: visible;
-  all: unset;
   position: absolute;
   left: calc(100% + 54px);
-  cursor: pointer;
   transition: 0.3s;
+  cursor: pointer;
 
   svg * {
     transition: 0.3s;
