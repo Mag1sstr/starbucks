@@ -21,6 +21,7 @@
 }
 .wrapper {
   overflow: hidden;
+  margin-bottom: 100px;
 }
 .row {
   position: relative;
@@ -28,6 +29,15 @@
   align-items: center;
   gap: 54px;
   transform: translateX(-28vw);
+  transition: 0.5s ease-in-out;
+
+  &.show {
+    transform: translateX(0);
+    .btn {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
 }
 .list {
   display: flex;
@@ -62,6 +72,11 @@
     font-weight: 639;
   }
 }
+.blur {
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -26px;
+}
 .price {
   display: flex;
   align-items: flex-end;
@@ -86,10 +101,14 @@
   margin-bottom: 30px;
 }
 .btn {
+  opacity: 1;
+  visibility: visible;
   all: unset;
   position: absolute;
   left: calc(100% + 54px);
   cursor: pointer;
+  transition: 0.3s;
+
   svg * {
     transition: 0.3s;
   }

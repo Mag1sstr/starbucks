@@ -1,3 +1,6 @@
+.wrapper {
+  margin-bottom: 100px;
+}
 .row {
   display: flex;
   justify-content: space-between;

@@ -3,8 +3,10 @@ import img1 from "../../assets/products/1.png";
 import img2 from "../../assets/products/2.png";
 import img3 from "../../assets/products/3.png";
 import BlurCircle from "../BlurCircle/BlurCircle";
+import { useState } from "react";
 
 function Products() {
+  const [showProducts, setShowProducts] = useState(false);
   return (
     <section className={styles.wrapper}>
       <div className="container">
@@ -19,7 +21,7 @@ function Products() {
             don't forget about the discount!
           </p>
         </div>
-        <div className={styles.row}>
+        <div className={`${styles.row} ${showProducts && styles.show}`}>
           <ul className={styles.list}>
             <li className={styles.item}>
               <div className={styles.imageWrapper}>
@@ -66,7 +68,7 @@ function Products() {
               <button>Buy Product</button>
             </li>
           </ul>
-          <button className={styles.btn}>
+          <button onClick={() => setShowProducts(true)} className={styles.btn}>
             <svg
               width="84"
               height="84"
