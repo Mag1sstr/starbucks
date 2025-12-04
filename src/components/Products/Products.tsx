@@ -2,17 +2,18 @@ import styles from "./Products.module.css";
 import img1 from "../../assets/products/1.png";
 import img2 from "../../assets/products/2.png";
 import img3 from "../../assets/products/3.png";
+import BlurCircle from "../BlurCircle/BlurCircle";
 
 function Products() {
   return (
     <section className={styles.wrapper}>
       <div className="container">
         <div className={styles.top}>
-          <h2>
+          <h2 className={styles.topTitle}>
             New Our
             <span> Products</span>
           </h2>
-          <p>
+          <p className={styles.topText}>
             Have time to buy the most harmonious drinks in the new Starbucks
             coffee and don't forget about the discount! Starbucks coffee and
             don't forget about the discount!
@@ -45,6 +46,17 @@ function Products() {
             <li className={styles.item}>
               <div className={styles.imageWrapper}>
                 <img src={img3} alt="" />
+              </div>
+              <h3>Fast</h3>
+              <p>Our cafe will serve you quickly</p>
+              <div className={styles.price}>
+                7,45$ <span>330 ml</span>
+              </div>
+              <button>Buy Product</button>
+            </li>
+            <li className={styles.item}>
+              <div className={styles.imageWrapper}>
+                <img src={img1} alt="" />
               </div>
               <h3>Fast</h3>
               <p>Our cafe will serve you quickly</p>
@@ -96,6 +108,7 @@ function Products() {
                 </linearGradient>
               </defs>
             </svg>
+            <BlurCircle width={200} height={170} className={styles.blur} />
           </button>
         </div>
       </div>

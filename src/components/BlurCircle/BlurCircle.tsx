@@ -8,6 +8,7 @@ interface IProps {
   left?: number | string;
   right?: number | string;
   bottom?: number | string;
+  className?: string;
 }
 
 function BlurCircle({
@@ -18,10 +19,11 @@ function BlurCircle({
   left,
   right,
   bottom,
+  className,
 }: IProps) {
   return (
     <div
-      className={styles.circle}
+      className={`${styles.circle} ${className}`}
       style={{ width, height, background, top, left, right, bottom }}
     ></div>
   );
