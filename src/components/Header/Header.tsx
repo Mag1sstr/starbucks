@@ -4,7 +4,6 @@ import cupImg from "../../assets/header/cup.png";
 import img1 from "../../assets/header/1.png";
 import img2 from "../../assets/header/2.png";
 import img3 from "../../assets/header/3.png";
-import star from "../../assets/icons/star.png";
 
 function Header() {
   return (
