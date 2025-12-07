@@ -1,0 +1,71 @@
+.wrapper {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: url(../../assets/events/decor.png);
+    top: 0;
+    left: 0;
+  }
+}
+.top {
+  display: flex;
+  margin-bottom: 54px;
+}
+.info {
+  display: flex;
+  gap: 72px;
+  margin-left: auto;
+  p {
+    max-width: 457px;
+    line-height: 1.63;
+  }
+  h2 {
+    max-width: 375px;
+    font-size: 80px;
+    line-height: 1.09;
+    font-weight: 800;
+    span {
+      background: linear-gradient(267.2deg, #237249 3.05%, #35c66b 75.72%);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 24px;
+}
+.item:nth-child(5n + 1),
+.item:nth-child(5n + 2) {
+  grid-column: span 3;
+}
+
+.item:nth-child(5n + 3),
+.item:nth-child(5n + 4),
+.item:nth-child(5n + 5) {
+  grid-column: span 2;
+}
+.item {
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+  min-height: 260px;
+  z-index: 2;
+  padding: 44px 25px 28px 25px;
+  img {
+    transition: 0.3s;
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+  }
+
+  &:hover {
+    img {
+      filter: brightness(1.5);
+    }
+  }
+}
