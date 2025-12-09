@@ -1,0 +1,59 @@
+.footer {
+  padding: 38px 0;
+  background-color: #0b0c0d;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 82px;
+}
+.linksRow {
+  display: flex;
+  gap: 82px;
+}
+.logo {
+  font-size: 37px;
+  font-weight: 800;
+  line-height: 1.1;
+  background: linear-gradient(263.46deg, #237249 3.14%, #35c66b 87.2%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  li {
+    color: #bbb3b36e;
+    cursor: pointer;
+    &:first-child {
+      color: #bbb3b3;
+    }
+  }
+}
+.btn {
+  all: unset;
+  transition: 0.3s;
+  cursor: pointer;
+
+  svg {
+    transform: rotate(-90deg);
+  }
+  svg * {
+    transition: 0.3s;
+  }
+  &:hover {
+    svg * {
+      opacity: 0.6;
+    }
+  }
+}
+.contacts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tel {
+  font-size: 26px;
+  font-weight: 600;
+}
