@@ -34,7 +34,7 @@ function Events() {
             <article className={styles.item} key={item.title}>
               <img src={item.img} alt={item.title} />
               <h3>{item.title}</h3>
-              <button>More</button>
+              <button className={styles.btn}>More</button>
             </article>
           ))}
         </div>
