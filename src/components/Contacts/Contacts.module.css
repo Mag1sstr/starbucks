@@ -1,0 +1,56 @@
+.wrapper {
+  position: relative;
+  padding-bottom: 107px;
+
+  &::before {
+    content: url(../../assets/contacts/decor.png);
+    position: absolute;
+    right: 0;
+    bottom: -280px;
+    z-index: -1;
+  }
+}
+.row {
+  display: flex;
+}
+.contactsBlock {
+  flex: 1;
+}
+.title {
+  max-width: 365px;
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 1.09;
+  margin-bottom: 52px;
+  span {
+    background: linear-gradient(263.46deg, #237249 3.14%, #35c66b 87.2%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.text {
+  max-width: 400px;
+  line-height: 1.63;
+  margin-bottom: 56px;
+}
+.social {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 32px;
+  font-weight: 500;
+  color: #fff;
+  &:not(:last-child) {
+    margin-bottom: 28px;
+  }
+}
+.imageWrapper {
+  width: 353px;
+  background-color: #237249;
+  img {
+    width: 100%;
+    object-fit: cover;
+    transform: translate(-34px, -27px);
+    box-shadow: -10.66px 19.79px 49.47px 0px #00000063;
+  }
+}

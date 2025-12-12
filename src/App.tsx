@@ -6,6 +6,7 @@ import Delicious from "./components/Delicious/Delicious";
 import Products from "./components/Products/Products";
 import Events from "./components/Events/Events";
 import Footer from "./components/Footer/Footer";
+import Contacts from "./components/Contacts/Contacts";
 function App() {
   useEffect(() => {
     AOS.init();
@@ -16,6 +17,7 @@ function App() {
       <Delicious />
       <Products />
       <Events />
+      <Contacts />
       <Footer />
     </>
   );
