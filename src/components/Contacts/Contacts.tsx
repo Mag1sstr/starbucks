@@ -1,5 +1,6 @@
 import styles from "./Contacts.module.css";
 import cardImage from "../../assets/contacts/1.jpg";
+import BlurCircle from "../BlurCircle/BlurCircle";
 
 function Contacts() {
   return (
@@ -7,6 +8,7 @@ function Contacts() {
       <div className="container">
         <div className={styles.row}>
           <div className={styles.contactsBlock}>
+            <BlurCircle width={300} height={200} className={styles.blurGreen} />
             <h2 className={styles.title}>
               Our
               <span> Contacts</span>

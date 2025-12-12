@@ -14,6 +14,7 @@
   display: flex;
 }
 .contactsBlock {
+  position: relative;
   flex: 1;
 }
 .title {
@@ -53,4 +54,10 @@
     transform: translate(-34px, -27px);
     box-shadow: -10.66px 19.79px 49.47px 0px #00000063;
   }
+}
+.blurGreen {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
 }
